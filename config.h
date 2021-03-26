@@ -5,11 +5,14 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=22:antialias=true:autohint=true";
+//static char *font = "JetBrains Mono Nerd Font:pixelsize=22:antialias=true:autohint=true:style=ExtraBold";
+static char *font = "Liberation Mono:pixelsize=22:antialias=true:autohint=true:style=Bold Italic";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+    "JetBrains Mono Nerd Font:pixelsize=22:antialias=true:autohint=true:style=ExtraBold"
+    "Hack Nerd Font Mono:pixelsize=22:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -224,13 +227,13 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ MODKEY,		        XK_s,		changealpha,	{.f = -0.05} },
-	{ MODKEY,		        XK_a,		changealpha,	{.f = +0.05} },
-	//{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	//{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ MODKEY,		        XK_s,		    changealpha,	{.f = -0.05} },
+	{ MODKEY,		        XK_a,		    changealpha,	{.f = +0.05} },
+  //{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+  //{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ Mod1Mask,             XK_Up,          kscrollup,      {.i =  -1} },
-	{ Mod1Mask,             XK_Down,        kscrolldown,    {.i =  -1} },
+	{ Mod1Mask,             XK_k,           kscrollup,      {.i =  -1} },
+	{ Mod1Mask,             XK_j,           kscrolldown,    {.i =  -1} },
   //{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
 };
 
